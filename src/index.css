@@ -39,6 +39,8 @@ h3 {
 .cards {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
