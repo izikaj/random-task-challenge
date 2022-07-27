@@ -4,7 +4,7 @@ export function Card({ title, url }) {
     <>
       <div className={`card${isDummy ? ' placeholder' : ''}`}>
         <div className={`card-image${isDummy ? ' placeholder' : ''}`}>
-          {url && <img src={url} alt={title} width="100" height="100" />}
+          {url && <img src={url} alt={title} width="300" height="650" />}
         </div>
         <h3>{title}</h3>
       </div>

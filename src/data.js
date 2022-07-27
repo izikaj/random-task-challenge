@@ -1,21 +1,17 @@
+const times = (count) => {
+  return (new Array(count)).join('|').split('|').map((_, i) => i + 1);
+}
+
 const data = {
-  creature: {
-    title: 'Creature',
-    items: [
-      'cat.png',
-      'dog.png',
-      'mouse.png',
-    ],
-    prefix: '/creatures/',
+  flower: {
+    title: 'Flower',
+    items: times(31).map((i) => `${i}.jpg`),
+    prefix: '/flowers/',
   },
-  things: {
-    title: 'Thing',
-    items: [
-      'cake.png',
-      'citrus.png',
-      'flower.png',
-    ],
-    prefix: '/things/',
+  animal: {
+    title: 'Animal',
+    items: times(31).map((i) => `${i}.jpg`),
+    prefix: '/animals/',
   }
 }
 
